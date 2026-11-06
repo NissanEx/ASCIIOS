@@ -51,14 +51,6 @@
 
 <br>
 
-<!-- 6. GITHUB STATS -->
-<h2 align="center">📊 Repository Stats</h2>
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=NissanEx&repo=ASCIIOS&theme=radical&hide_border=true&bg_color=0D1117" alt="Repo Stats" width="60%">
-</div>
-
-<br>
-
 <!-- 7. FOOTER -->
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=100&section=footer" width="100%"/>
