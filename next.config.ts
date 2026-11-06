@@ -1,12 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // 🟢 WAJIB UNTUK ELECTRON BUILDER
+  output: "standalone",
+
   experimental: {
     agentFeedback: true,
   },
   cacheComponents: true,
   partialPrefetching: true,
+  
+  devIndicators: false,
+
   turbopack: {
     rules: {
       "*.css": {

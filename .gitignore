@@ -17,8 +17,12 @@
 /.next/
 /out/
 
-# production
-/build
+# production (Electron Builder Output)
+/dist_electron
+
+# KECUALIKAN folder build agar ikon electron-builder tidak hilang
+!/build
+!/build/**
 
 # misc
 .DS_Store
@@ -39,3 +43,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Rahasia (API Key)
+gcloud-key.json

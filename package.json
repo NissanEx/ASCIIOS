@@ -2,25 +2,75 @@
   "name": "ascii-face-chat",
   "version": "0.1.0",
   "private": true,
+  "description": "ASCII OS Desktop Environment",
+  "author": {
+    "name": "Wira Abdy",
+    "email": "sandywiraabdy@gmail.com"
+  },
+  "homepage": "https://github.com/NissanEx/ascii-face-chat",
+  "main": "electron/main.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:electron": "next build && cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint",
+    "electron:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron . --no-sandbox\"",
+    "electron:build": "npm run build:electron && electron-builder --linux"
   },
   "dependencies": {
+    "@google-cloud/text-to-speech": "^7.2.0",
+    "@google/genai": "^2.32.0",
+    "@mediapipe/tasks-vision": "^1.2.0",
+    "asciify-react": "1.0.0",
     "next": "16.4.3",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "react-icons": "^5.7.0"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^10.0.6",
+    "electron": "^45.2.1",
+    "electron-builder": "^26.18.0",
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wait-on": "^9.5.1"
+  },
+  "build": {
+    "appId": "com.asciios.app",
+    "productName": "AsciiOS",
+    "asar": false,
+    "directories": {
+      "output": "dist_electron",
+      "buildResources": "build"
+    },
+    "files": [
+      "electron/**/*",
+      "package.json",
+      ".next/standalone/**/*"
+    ],
+    "linux": {
+      "target": ["deb"],
+      "category": "Utility",
+      "icon": "build/icon.png",
+      "executableName": "ascii-os",
+      "desktop": {
+        "entry": {
+          "Name": "Ascii OS",
+          "Comment": "Launch Ascii OS Desktop",
+          "Categories": "Utility;System;",
+          "StartupWMClass": "ascii-face-chat"
+        }
+      }
+    },
+    "deb": {
+      "recommends": ["wmctrl", "xdotool", "x11-utils"]
+    }
   }
 }
