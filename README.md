@@ -1,85 +1,82 @@
-<!-- Banner Image -->
+<!-- 1. BANNER UTAMA (GAMBAR KAMU) -->
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000&auto=format&fit=crop" width="100%" alt="ASCII OS Banner">
+  <img src="./assets/banner.png" width="100%" style="border-radius: 10px; margin-bottom: 20px;" alt="ASCII OS Banner">
 </div>
 
-<h1 align="center">ASCII OS 🖥️</h1>
+<!-- 2. HEADER & TAGLINE -->
+<h1 align="center">ASCII OS</h1>
 <h3 align="center">Live ASCII Wallpaper & Desktop Companion</h3>
 
+<h4 align="center">> Bringing Desktops to Life</h4>
+
 <br>
 
-<!-- Know About Project Section -->
-<h2>🔍 About The Project</h2>
+<!-- 3. ABOUT PROJECT (Teks Kiri, Gambar Kamu di Kanan) -->
+<h2 align="center">🚀 About The Project</h2>
 
-<table>
+<table align="center">
   <tr>
-    <td valign="top" width="25%">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/ASCII_Art_Computer.svg/300px-ASCII_Art_Computer.svg.png" alt="ASCII Brain" width="100%" style="border-radius: 10px;">
-    </td>
-    <td valign="top" width="75%">
-      <h4>What is ASCII OS?</h4>
-      <p><b>ASCII OS</b> adalah aplikasi Desktop Environment eksperimental dan Live Wallpaper interaktif yang dibangun menggunakan Electron dan Next.js. Aplikasi ini menampilkan karakter wajah ASCII yang beranimasi langsung di belakang ikon desktop Anda.</p>
-      <p>Dengan integrasi MediaPipe, karakter ini dapat mendeteksi gerakan wajah secara <i>real-time</i>, berkedip, dan bereaksi. Dilengkapi dengan AI Chat (Gemini) dan Text-to-Speech, menjadikan desktop Anda hidup dan futuristik.</p>
+    <td valign="top" width="60%">
+      <p><b>ASCII OS</b> adalah aplikasi Desktop Environment eksperimental dan Live Wallpaper interaktif yang dibangun menggunakan Electron dan Next.js.</p>
       
-      <h4>Tech Stack:</h4>
-      <img src="https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js">
-      <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" alt="Electron">
-      <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
-      <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-      <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
+      <p>Aplikasi ini menampilkan karakter wajah ASCII yang beranimasi langsung di belakang ikon desktop Anda. Menariknya, proyek ini menggunakan <b>MediaPipe</b> untuk mendeteksi gerakan wajah Anda secara <i>real-time</i>, membuat karakter dapat berkedip dan bereaksi.</p>
+      
+      <p>Dilengkapi dengan integrasi <b>Google Gemini API</b> dan <b>Text-to-Speech (TTS)</b>, Anda dapat benar-benar mengobrol dengan desktop Anda sendiri.</p>
+      
+      <p>Proyek ini dirancang khusus untuk sistem operasi Linux (X11) agar dapat menempel sempurna di lapisan paling bawah jendela aplikasi lain.</p>
+    </td>
+    <td valign="top" width="40%" align="center">
+      <!-- GAMBAR KARAKTER KAMU DI SINI -->
+      <img src="./assets/character.gif" width="250" style="border-radius: 10px;" alt="ASCII Character">
     </td>
   </tr>
 </table>
 
 <br>
 
-<!-- Top Features Section -->
-<h2>🏆 Key Features</h2>
+<!-- 4. CONNECT & LINKS (Badges) -->
+<h2 align="center">🔗 Connect & Links</h2>
 
-<table>
-  <tr>
-    <td valign="top" width="75%">
-      <ul>
-        <li>
-          <b>Live ASCII Wallpaper:</b> Karakter wajah ASCII yang beranimasi menempel di belakang desktop (mendukung Linux X11).
-        </li>
-        <li>
-          <b>Face & Body Tracking:</b> Deteksi gerakan wajah dan mata menggunakan MediaPipe.
-        </li>
-        <li>
-          <b>AI Companion:</b> Ngobrol dengan karakter menggunakan Google Gemini API (BYOK).
-        </li>
-        <li>
-          <b>Text-to-Speech (TTS):</b> Karakter dapat merespons dengan suara AI.
-        </li>
-        <li>
-          <b>Cinematic Setup UI:</b> Antarmuka pengaturan minimalis bergaya SpaceX.
-        </li>
-      </ul>
-    </td>
-    <td valign="top" width="25%" align="center">
-      <img src="https://cdn-icons-png.flaticon.com/512/179/179403.png" alt="Laptop" width="120">
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <a href="https://github.com/NissanEx/ASCIIOS/releases" target="_blank">
+    <img src="https://img.shields.io/badge/Download_App-100000?style=for-the-badge&logo=github&logoColor=white" alt="Download App">
+  </a>
+  <a href="https://github.com/NissanEx/ASCIIOS/issues" target="_blank">
+    <img src="https://img.shields.io/badge/Report_Bug-D14836?style=for-the-badge&logo=github&logoColor=white" alt="Issues">
+  </a>
+  <a href="https://github.com/NissanEx/ASCIIOS/blob/main/LICENSE" target="_blank">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
+  </a>
+</div>
 
 <br>
 
-<!-- Installation Section -->
-<h2>🚀 How to Run (Development)</h2>
+<!-- 5. TECH STACK (Deretan Ikon Berwarna) -->
+<h2 align="center">🛠️ Tech Stack</h2>
 
-> **Note:** Aplikasi ini dioptimalkan untuk Linux (X11). Jika Anda menggunakan Wayland, fitur Live Wallpaper tidak akan berfungsi.
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=nextjs,react,electron,ts,tailwind,nodejs,html,css,js" alt="Tech Stack Icons">
+  
+  <br><br>
+  
+  <img src="https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlebard&logoColor=white" alt="Gemini">
+  <img src="https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge&logo=google&logoColor=white" alt="MediaPipe">
+  <img src="https://img.shields.io/badge/Puter.js_TTS-FF4B4B?style=for-the-badge&logo=javascript&logoColor=white" alt="Puter">
+  <img src="https://img.shields.io/badge/Linux_X11-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+</div>
 
-```bash
-# 1. Install dependencies sistem (Ubuntu/Debian)
-sudo apt install wmctrl xdotool x11-utils scrot -y
+<br>
 
-# 2. Clone repositori
-git clone https://github.com/NissanEx/ASCIIOS.git
-cd ASCIIOS
+<!-- 6. GITHUB STATS (Grafik) -->
+<h2 align="center">📊 Repository Stats</h2>
 
-# 3. Install node modules
-npm install
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=NissanEx&repo=ASCIIOS&theme=radical&hide_border=true&bg_color=0D1117" alt="Repo Stats" width="60%">
+</div>
 
-# 4. Jalankan development mode
-npm run electron:dev
+<br>
+
+<!-- 7. FOOTER (Efek Gelombang) -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=100&section=footer" width="100%"/>
+</div>
