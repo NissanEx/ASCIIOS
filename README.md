@@ -27,7 +27,7 @@
     </td>
     <td valign="top" width="40%" align="center">
       <!-- GAMBAR KARAKTER KAMU DI SINI -->
-      <img src="./assets/character.gif" width="250" style="border-radius: 10px;" alt="ASCII Character">
+      <img src="./assets/character.png" width="250" style="border-radius: 10px;" alt="ASCII Character">
     </td>
   </tr>
 </table>
